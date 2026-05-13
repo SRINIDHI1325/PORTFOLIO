@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "BTech in Information Technology";
+  const fullText = "Computer Science & IT Undergraduate";
   
   useEffect(() => {
     let index = 0;
@@ -50,11 +50,11 @@ const Hero = () => {
           <div className="text-center lg:text-left max-w-2xl">
             <p className="text-primary font-medium mb-2 animate-fade-up">Hello, I'm</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fade-up animation-delay-100">
-              S Srinidhi
-            </h1>
+  S Srinidhi
+</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-2 animate-fade-up animation-delay-200">
-              Student @ Mohan Babu University, Tirupati
-            </p>
+  CSIT Undergraduate @ Mohan Babu University, Tirupati
+</p>
             <div className="h-8 mb-6 animate-fade-up animation-delay-300">
               <span className="text-xl md:text-2xl gradient-text font-semibold">
                 {displayText}
@@ -62,14 +62,25 @@ const Hero = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-8 animate-fade-up animation-delay-400">
-              Passionate about transforming academic knowledge into tangible tech solutions
-            </p>
+  Skilled in Java, Python, React JS, Machine Learning, and Full-Stack Development with experience building scalable web applications.
+</p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up animation-delay-500">
-              <Button size="lg" className="gradient-bg text-primary-foreground hover:opacity-90 gap-2">
-                <FileText className="w-5 h-5" />
-                View Resume
-              </Button>
+       <Button
+  size="lg"
+  className="gradient-bg text-primary-foreground hover:opacity-90 gap-2"
+  asChild
+>
+  <a
+    href="/S_SRINIDHI_.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    download
+  >
+    <FileText className="w-5 h-5" />
+    View Resume
+  </a>
+</Button>
               <Button
                 size="lg"
                 variant="outline"
